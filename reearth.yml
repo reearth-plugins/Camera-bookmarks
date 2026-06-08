@@ -1,0 +1,29 @@
+id: reearth-plugins-camera-bookmarks
+name: Camera Bookmarks
+version: 1.0.0
+description: Save the current camera position and fly back to it later. Bookmarks persist across sessions.
+author: reearth-plugins
+repository: https://github.com/reearth-plugins/camera-bookmarks
+
+extensions:
+  - id: camera-bookmarks
+    type: widget
+    name: Camera Bookmarks
+    description: Saved camera views with one-click fly-to.
+    widgetLayout:
+      defaultLocation:
+        zone: outer
+        section: right
+        area: top
+    schema:
+      groups:
+        - id: default
+          title: Settings
+          fields:
+            - id: flyToDuration
+              type: number
+              title: Fly-to duration
+              description: Camera animation duration in seconds (default 2).
+              defaultValue: 2
+              min: 0
+              max: 10
