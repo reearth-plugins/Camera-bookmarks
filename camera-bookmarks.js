@@ -481,7 +481,7 @@ const getFlyToDuration = () => {
   return typeof v === "number" && v >= 0 ? v : DEFAULT_FLY_DURATION;
 };
 
-reearth.ui.show(html);
+reearth.ui.show(html, { width: 280 });
 
 // In-memory copy of the bookmark list, kept in sync with clientStorage.
 let bookmarks = [];
